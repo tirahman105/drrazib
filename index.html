@@ -5,33 +5,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
   </head>
   <body>
-    
-<div class="container col-md-6 p-4">
+    <header class="container">
 
-    <h1 class="text-center">Registration form</h1>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfIegqHXyuVyT52WdEklNxjp5a60WdyBNVG19vMiLgPj5zjxA/formResponse">
-        <div class="row mb-3">
-          <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
-          <div class="col-sm-10">
-            <input type="name" name="entry.1730097595" class="form-control" id="inputName3">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/web_bannar.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/web_bannar.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/web_bannar.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <div class="row mb-3">
-          <label for="inputEmail3" class="col-sm-2 col-form-label">email</label>
-          <div class="col-sm-10">
-            <input type="email" name="entry.620478327" class="form-control" id="inputEmail3">
+      </div>
+
+    </header>
+
+    <main class="container row mx-auto p-4">
+      <div class="col-md-6 p-4 border">
+
+        <p class="h3"> Course Outline: </p>
+
+        <p class="h3 bg-light">  <strong> Day 1 </strong>  </p>
+
+        <ul class="list-group">
+          <li class="list-group-item">Root canal system (Introduction & Basic)</li>
+          <li class="list-group-item">Diagnosis & Endodontic case selection:</li>
+           <li class="list-group-item">How to make a Dynamic diagnosis?</li>
+          <li class="list-group-item">Pulp Vitality test.</li>
+          <li class="list-group-item">Endodontic case selection & treatment planning.</li>
+          <li class="list-group-item"> <i class="fa-regular fa-circle-check"></i> How to get profound anaesthesia before root canal starts & Pain Control:</li>
+          <li class="list-group-item">	Profound hard & soft tissue anaethesia before, during & after root canal procedure.</li>
+           <li class="list-group-item">Predict the possible post-op pain & control it.</li>
+          <li class="list-group-item">Pulp Vitality test.</li>
+          <li class="list-group-item">Endodontic case selection & treatment planning.</li>
+
+        </ul>
+
+        <p>
+
+          <p class="h3 bg-light">  <strong> Day 2 </strong>  </p>
+
+        <ul class="list-group">
+          <li class="list-group-item">Root canal system (Introduction & Basic)</li>
+          <li class="list-group-item">Diagnosis & Endodontic case selection:</li>
+           <li class="list-group-item">How to make a Dynamic diagnosis?</li>
+          <li class="list-group-item">Pulp Vitality test.</li>
+          <li class="list-group-item">Endodontic case selection & treatment planning.</li>
+          <li class="list-group-item"> <i class="fa-regular fa-circle-check"></i> How to get profound anaesthesia before root canal starts & Pain Control:</li>
+          <li class="list-group-item">	Profound hard & soft tissue anaethesia before, during & after root canal procedure.</li>
+           <li class="list-group-item">Predict the possible post-op pain & control it.</li>
+          <li class="list-group-item">Pulp Vitality test.</li>
+          <li class="list-group-item">Endodontic case selection & treatment planning.</li>
+
+        </ul>
+
+     
+
+
+        
+        
+ 
+
+      </div>
+      <div class="col-md-6 p-4 text-center ">
+
+        <img src="images/hands_on_banner-3.jpg" alt="">
+        <div class="p-4 border">
+
+          <!-- Button trigger modal -->
+<button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ Enroll Now
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registration form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container ">
+
+          <h1 class="text-center">Registration form</h1>
+          <form id="formValidation" action="https://docs.google.com/forms/d/e/1FAIpQLSfIegqHXyuVyT52WdEklNxjp5a60WdyBNVG19vMiLgPj5zjxA/formResponse" target="hidden_iframe">
+              <div class="row mb-3">
+                <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="name" name="entry.1730097595" class="form-control" id="inputName3" required>
+                </div>
+              </div>
+             
+              <!-- <div class="row mb-3">
+                <label for="inputName3" class="col-sm-2 col-form-label">Gender</label>
+                <div class="col-sm-10">
+                  <input type="name" name="entry.1869421495" class="form-control" id="inputName3">
+                </div>
+              </div> -->
+              <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">email</label>
+                <div class="col-sm-10">
+                  <input type="email" name="entry.620478327" class="form-control" id="inputEmail3" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputmobile3" class="col-sm-2 col-form-label">Mobile</label>
+                <div class="col-sm-10">
+                  <input type="mobile" name="entry.2056088669" class="form-control" id="inputmobile3" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputAddess3" class="col-sm-2 col-form-label">Address</label>
+                <div class="col-sm-10">
+                  <input type="name" name="entry.792629263" class="form-control" id="inputAddress3" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputBM&DC3" class="col-sm-2 col-form-label">BM&DC Reg</label>
+                <div class="col-sm-10">
+                  <input type="name" name="entry.1899100201" class="form-control" id="inputBM&DC3" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputYear3" class="col-sm-2 col-form-label">BDS passing year</label>
+                <div class="col-sm-10">
+                  <input type="name" name="entry.1127522510" class="form-control" id="inputYear3" required>
+                </div>
+              </div>
+            
+              
+              <button type="submit"  value="Submit" class="btn btn-success btn-lg">Register</button>
+            </form>
+            <iframe id="hidden_iframe"  name="hidden_iframe" style ="display: none;"></iframe>
+      
+          </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+
+          
+
+          <div class="container mt-4">
+            <div class="row">
+              <div class="col">
+                <ul class="list-group">
+                  <li class="list-group-item"> Basic to advance</li>
+                  
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="list-group">
+                  <li class="list-group-item"> <i class="fa-regular fa-clock"></i> 2 Days long course</li>
+                  
+                </ul>
+              </div>
+            </div>
+          
+          </div>
+          <div class="container mt-4">
+            <div class="row">
+              <div class="col">
+                <ul class="list-group">
+                  <li class="list-group-item"> Complimentary Gifts</li>
+                  
+                </ul>
+              </div>
+              <div class="col">
+                <ul class="list-group">
+                  <li class="list-group-item"> <i class="fa-regular fa-clock"></i> 2 Days long course</li>
+                  
+                </ul>
+              </div>
+            </div>
+          
           </div>
         </div>
+
+       
+
+
       
         
-        <button type="submit" class="btn btn-primary">Register</button>
-      </form>
+      </div>
+      
 
-    </div>
+    </main>
+ 
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  </body>
+<script>
+  $(document).ready(function(){
+    $("form").submit(function(){
+      alert("Submitted");
+      window.location.reload(true);
+      // location.replace("https://www.w3schools.com")
+    });
+   
+  });
+
+//   if(confirm('Successful Message')){
+//     window.location.reload();  
+// }
+
+  // if (submit =true) {
+  //   function pageRedirect() {
+  //     window.location.href = "https://www.tutorialrepublic.com/";
+  //   }  
+  // };
+
+  // function pageRedirect() {
+  //     window.location.href = "https://www.tutorialrepublic.com/";
+  //   }     
+
+
+//   function myFunction() {
+//   location.replace("https://www.w3schools.com")
+// }
+  </script>
+
+  <!-- <script>
+    function refresh()
+{
+    alert("click ok to refresh  page");
+    location.reload();
+}
+  </script> -->
+
+  
+</body>
 </html>
